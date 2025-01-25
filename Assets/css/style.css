@@ -1,0 +1,695 @@
+html {
+    scrollbar-width: 5px;
+    /* Ou 'auto', ou 'none' */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-id {
+    position: absolute;
+}
+
+body {
+    background-color: #E8EFFF;
+}
+
+header {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    gap: 60px;
+}
+
+
+header .logo {
+    width: 225px;
+    height: 67px;
+}
+
+.lista-nav {
+    gap: 50px;
+    font-size: 18px;
+    list-style: none;
+    color: #5A10ED;
+    font-family: 'MontSerrat';
+    font-weight: bold;
+    border: 3px solid #5A10ED;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 200px;
+}
+
+.item-nav {
+    display: flex;
+    gap: 10px
+}
+
+.item-nav a {
+    text-decoration: none;
+}
+
+.icone {
+    width: 24px;
+}
+
+.sec-principal {
+    margin-left: 100px;
+}
+
+.lontra {
+    width: 700px;
+
+}
+
+.principal {
+    width: 50%;
+}
+
+.line,
+.btn-contate, .btn-quero  {
+    font-family: 'Comfortaa', serif;
+}
+
+.headline {
+    margin-top: 100px;
+    font-family: 'MontSerrat', serif;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.line {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: #5A10ED;
+    width: 500px;
+}
+
+.btn-contate {
+    text-decoration: none;
+    background-color: #5A10ED;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 200px;
+}
+
+.mensagens-sec {
+    margin-top: -49px;
+}
+
+.topo-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrasta {
+    width: 100%;
+}
+
+.seta {
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.footer-sec {
+    background-color: #5A10ED;
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.footer-sec-contain {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mensagens-importantes-div {
+    display: flex;
+}
+
+.triangulo {
+    width: 100px;
+    margin-right: -50px;
+}
+
+.caixa-roxa {
+    position: relative;
+    display: flex;
+    align-items: end;
+    width: 570px;
+    height: 615px;
+    background-color: #0D0C3B;
+    border-radius: 84px;
+    overflow: visible;
+}
+
+.notificacoes {
+    position: absolute;
+    right: -50px;
+    top: 25%;
+    width: 90px;
+}
+
+.lontra-cll {
+    position: absolute;
+    width: 625px;
+    height: 500px;
+}
+
+.mensagens-importantes {
+    background-color: #E8EFFF;
+    font-family: 'MontSerrat', serif;
+    border-radius: 60px;
+    padding: 30px;
+}
+
+.mensagens-importantes h5 {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.comunicados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.comunicado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mensagens-importantes .lontra-cll {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.comunicado p {
+    width: 400px;
+    text-align: justify;
+    font-style: italic;
+    font-size: 15px;
+    margin: 0;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #5A10ED;
+}
+
+.lontra-consegue-div {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.lontra-consegue {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.conseguimos-p {
+    font-weight: 600;
+}
+
+.beneficios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.beneficio p {
+    font-size: 15px;
+    margin: 0;
+    color: #5A10ED;
+}
+
+.div-btn-quero {
+    position: relative;
+}
+
+.btn-quero {
+    text-decoration: none;
+    background-color: #0D0C3B;
+    font-size: 29px;
+    font-weight: bold;
+    color: #E8EFFF;
+    padding: 15px 30px 15px 30px;
+    border-radius: 200px;
+    margin-left: 46px;
+}
+
+.mouse {
+    position: absolute;
+    width: 50px;
+    left: 30px;
+    top: 25px;
+}
+
+.paisagem {
+    position: relative;
+    background-color: #5A10ED;
+    overflow: hidden; /* Adicionado para evitar colapso de margem */
+}
+
+
+.cordilheira {
+    padding-top: 350px;
+}
+
+.placa {
+    position: absolute;
+    left: 690px;
+    top: 260px;
+    width: 290px;
+}
+
+.montanhas {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+
+.paisagem-conteudo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    left: calc(50% - 550px);
+    margin-top: 270px;
+    margin-bottom: 150px;
+
+}
+
+.balao-div {
+    position: relative;
+}
+
+.balao-div-container {
+    position: absolute;
+    padding: 30px;
+}
+
+.text-balao {
+    font-family: 'Comfortaa', serif;
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+    color: #5A10ED;
+    font-weight: bold;
+}
+
+.balao {
+    width: 900px;
+}
+
+.cafe {
+    position: absolute;
+    right: 570px;
+    top: 250px;
+    width: 100px;
+}
+
+.paisagem-conteudo .icone {
+    width: 300px;
+    height: 300px;
+}
+
+/*  SESSAO DO NAVEGADOR  */
+
+.page {
+    position: relative;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-right: 15px;
+    background-color: #0D0C3B;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    font-family: "MontSerrat";
+    font-weight: 500;
+    color: white
+}
+
+.tab {
+    background-color: rgba(90, 16, 237, 0.7);
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 39px;
+}
+
+.tab .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab .esquerda p {
+    margin-bottom: 8px;
+}
+
+.select {
+    background-color: #5A10ED;
+}
+
+.icons-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 5px;
+    gap: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: -50px;
+}
+
+.down {
+    background-color: #5A10ED;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.setinhas {
+    font-family: "Comfortaa";
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.atualizar, .coracao, .barras { 
+    width: 25px;
+}
+
+.navegador {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "MontSerrat";
+    color: black;
+    background-color: white;
+    width: 1200px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 40px;
+}
+
+.navegador p {
+    margin: 0;
+}
+
+.barras {
+    margin-right: 50px;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem para uma nova linha */
+    width: 100%; /* Ajuste a largura para 100% */
+    margin-top: 150px;
+    margin-bottom: 350px;
+    list-style: none;
+    justify-content: center; /* Garante que o espaçamento entre as colunas seja adequado */
+}
+
+.servicos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%; /* Para 3 itens por linha, defina a largura de cada item como 30% */
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.servicos li div {
+    width: 100%;
+    border-radius: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "MontSerrat";
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.servicos li div h3 {
+    font-size: 20px;
+}
+
+.servicos li p {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*  PARCEIROS  */
+
+.parceiros{
+    position: relative;
+    margin-top:700px;
+    background-color: #5A10ED;
+}
+
+.parceiros-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.parceiros-div .esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.titulo {
+    font-family: "Comfortaa";
+    font-weight: 400;
+    font-size: 80px;
+    color: white;
+    margin: 0;
+}
+
+.parceiro {
+    background-color: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 400px;
+    gap: 15px;
+}
+
+.parceiro img {
+    width: 350px;
+}
+
+.parceiros-div {
+    padding: 50px;
+}
+
+.parceiro p {
+    margin: 0;
+    text-align: center;
+    font-family: "Comfortaa";
+}
+
+.parceiros-div .linha {
+    width: 3px;
+    height: 500px;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.parceiros-div .direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto p {
+    font-family: "Comfortaa";
+    margin: 0;
+    font-weight: bold;
+    height: 120px;
+    color: white;
+}
+
+.tana {
+    font-size: 143px;
+}
+
+.hora {
+    font-size: 157.28px;
+}
+
+.ultima {
+    display: flex;
+    margin-top: 40px !important;
+}
+
+.de {
+    font-size: 60px;
+    transform: rotate(90deg);
+    width: 90px;
+    margin-left: -30px !important; 
+}
+
+.ligar {
+    margin-top: -20px !important;
+    font-size: 131.28px;
+    margin-left: 13px !important;
+}
+
+.descubra {
+    margin: 0;
+    margin-top: 40px;
+    color: white;
+    font-family: "MontSerrat";
+    text-align: justify;
+    font-size: 26px;
+    width: 400px;
+}
+
+.arrasta-white {
+    width: 100%;
+}
+
+.btn-invasao {
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 25px);
+    margin-top: 10px;
+}
+
+
+/*  CONSULTORIA  */
+
+
+.consultoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 100px;
+    gap: 50px;
+}
+
+.consultoria .esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.consultoria .esquerda h5{
+    font-family: "Comfortaa";
+    font-size: 50px;
+    font-weight: bold;
+    color: #5A10ED;
+}
+
+.consultoria .esquerda p {
+    margin: 0;
+    font-family: MontSerrat;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.consultoria .esquerda img {
+    margin-top: 50px;
+}
+
+.consultoria .direita img {
+    width: 500px;
+}
+
+.consultoria .direita {
+    margin-bottom: 50px;
+}
