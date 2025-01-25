@@ -694,6 +694,10 @@ header .logo {
     margin-bottom: 50px;
 }
 
+.lupa {
+    width: 300px;
+}
+
 .frase {
     width: 400px;
 }
