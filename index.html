@@ -162,7 +162,7 @@
 
                 <img class="balao" src="Assets/imgs/balao.png" alt="balao de conversa">
             </div>
-        <!-- <img class="cafe" src="Assets/imgs/cafe.png" alt="chicare de café"> -->
+            <!-- <img class="cafe" src="Assets/imgs/cafe.png" alt="chicare de café"> -->
             <img class="icone" src="Assets/imgs/icone.png" alt="">
         </div>
     </section>
@@ -191,10 +191,10 @@
             </div>
         </div>
         </div>
-        <div class="down" >
-            <div class="header" >
+        <div class="down">
+            <div class="header">
                 <p class="setinhas">
-                    < >
+                    <>
                 </p>
                 <img class="atualizar" src="Assets/imgs/atualizar.svg" alt="icon de atualizar pagina">
                 <div class="navegador">
@@ -206,7 +206,7 @@
                 <img class="barras" src="Assets/imgs/barras.svg" alt="icone de 3 barras">
             </div>
             <div class="sec">
-                <ul class="servicos" >
+                <ul class="servicos">
                     <li>
                         <div>
                             <img src="Assets/imgs/publicidade.svg" alt="icone de publicidade">
@@ -248,10 +248,10 @@
         </div>
         </div>
     </section>
-    <section class="parceiros">
+    <section class="parceiros" id="parceiros">
         <div class="parceiros-div">
             <div class="esquerda">
-                <p class="titulo" id="parceiros">parceiros</p>
+                <p class="titulo">parceiros</p>
                 <img src="Assets/imgs/marcas-div.png" alt="">
                 <img src="Assets/imgs/inova-div.png" alt="">
             </div>
@@ -267,12 +267,72 @@
     <section class="consultoria">
         <div class="esquerda">
             <h5 id="consultoria">consultoria totalmente grátis para seu negócio!</h5>
-            <p>Receba um diagnóstico do nosso time comercial sobre a sua estrutura digital e destrave as vendas da sua empresa.</p>
+            <p>Receba um diagnóstico do nosso time comercial sobre a sua estrutura digital e destrave as vendas da sua
+                empresa.</p>
             <img class="lupa" src="Assets/imgs/lupa.png" alt="um icone de pesquisa">
         </div>
         <div class="direita">
-            <img src="Assets/imgs/formulario.png" alt="">
-        </div>
+            <form id="formulario" action="https://script.google.com/macros/s/AKfycbyEXOhLmkqak1jkWE7Hx8Hjw1N7FbhwsXaiHAZPauEy7D23TJENPo2zPuGs4QFtrDao5g/exec" method="POST" class="formulario">
+                <h4 class="titulo">Consultoria Gratuita</h4>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                <input type="text" id="instagram" name="instagram" placeholder="Instagram">
+                <select id="faturamento" name="faturamento" required>
+                    <option value="">Faturamento (Anual)</option>
+                    <option value="10k-15k">R$10.000 a R$15.000</option>
+                    <option value="15k-25k">R$15.000 a R$25.000</option>
+                    <option value="25k-35k">R$25.000 a R$35.000</option>
+                    <option value="35k-40k">R$35.000 a R$40.000</option>
+                    <option value="40k+">Acima de R$40.000</option>
+                </select>
+                <input type="text" id="funcionarios" name="funcionarios" placeholder="Número de Funcionários">
+                <button type="submit">Enviar</button>
+                <!-- Adicione uma mensagem de feedback -->
+                <p id="mensagem" style="display: none; margin-top: 10px;"></p>
+            </form>
+            <script>
+                document.getElementById('formulario').addEventListener('submit', async function(event) {
+                    event.preventDefault(); // Impede o envio padrão do formulário
+                    
+                    const formData = new FormData(this);
+                    const mensagem = document.getElementById('mensagem');
+            
+                    try {
+                        // Envia os dados para o servidor
+                        const response = await fetch(this.action, {
+                            method: 'POST',
+                            body: formData
+                        });
+            
+                        if (response.ok) {
+                            // Limpa os campos do formulário
+                            this.reset();
+            
+                            // Exibe mensagem de sucesso
+                            mensagem.textContent = 'Dados enviados com sucesso!';
+                            mensagem.style.color = '#2cff2c';
+                            mensagem.style.display = 'block';
+            
+                            // Remove a mensagem após alguns segundos
+                            setTimeout(() => mensagem.style.display = 'none', 5000);
+                        } else {
+                            // Em caso de erro do servidor
+                            const errorText = await response.text();
+                            mensagem.textContent = `Erro ao enviar os dados: ${errorText}`;
+                            mensagem.style.color = 'red';
+                            mensagem.style.display = 'block';
+                        }
+                    } catch (error) {
+                        // Lida com erros de rede
+                        mensagem.textContent = `Erro de conexão: ${error.message}`;
+                        mensagem.style.color = 'red';
+                        mensagem.style.display = 'block';
+                    }
+                });
+            </script>
+            
+            
     </section>
 </body>
 
