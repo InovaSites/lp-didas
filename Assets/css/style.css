@@ -20,19 +20,41 @@ body {
 }
 
 header {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
     gap: 60px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 header .logo {
     width: 225px;
     height: 67px;
 }
 
+.seta-down {
+    display: none;
+    width: 25px;
+}
+
+.rodar {
+    transform: rotateŸ(90deg);
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+}
+
 .lista-nav {
+    display: flex;
+    align-items: center;
     gap: 50px;
     font-size: 18px;
     list-style: none;
@@ -40,11 +62,13 @@ header .logo {
     font-family: 'MontSerrat';
     font-weight: bold;
     border: 3px solid #5A10ED;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 50px;
     border-radius: 200px;
+    margin: 0;
+}
+
+.ativa {
+    display: in;
 }
 
 .item-nav {
@@ -62,10 +86,13 @@ header .logo {
 
 .sec-principal {
     margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lontra {
-    width: 700px;
+    width: 50%;
 
 }
 
@@ -74,14 +101,15 @@ header .logo {
 }
 
 .line,
-.btn-contate, .btn-quero  {
+.btn-contate,
+.btn-quero {
     font-family: 'Comfortaa', serif;
 }
 
 .headline {
     margin-top: 100px;
     font-family: 'MontSerrat', serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
 
 }
@@ -92,7 +120,6 @@ header .logo {
     margin-top: 40px;
     margin-bottom: 70px;
     color: #5A10ED;
-    width: 500px;
 }
 
 .btn-contate {
@@ -133,11 +160,21 @@ header .logo {
 .footer-sec-contain {
     padding-top: 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    align-items: start;
-    margin-left: 100px;
-    margin-right: 100px;
+    align-items: center;
+    /* Mantém os elementos separados */
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 20px;
+    /* Espaço entre as colunas */
+}
+
+.div-lontra-cll,
+.footer-direita {
+    flex: 1;
+    /* Ambos ocupam a mesma proporção do espaço disponível */
+    max-width: 50%;
+    /* Garante divisão igual */
 }
 
 .footer-direita {
@@ -154,30 +191,28 @@ header .logo {
 .triangulo {
     width: 100px;
     margin-right: -50px;
+    flex-shrink: 0;
+    /* Impede que o triângulo afete o layout flex */
 }
 
 .caixa-roxa {
     position: relative;
-    display: flex;
-    align-items: end;
-    width: 570px;
-    height: 615px;
-    background-color: #0D0C3B;
-    border-radius: 84px;
-    overflow: visible;
+    width: 100%;
+    /* Ocupa toda a largura do container pai */
 }
 
 .notificacoes {
     position: absolute;
-    right: -50px;
-    top: 25%;
-    width: 90px;
+    right: 0px;
+    top: 20%;
+    width: 132px;
 }
 
 .lontra-cll {
-    position: absolute;
-    width: 625px;
-    height: 500px;
+    width: 100%;
+    /* Agora relativo ao container pai */
+    height: auto;
+    /* Mantém proporção */
 }
 
 .mensagens-importantes {
@@ -185,6 +220,15 @@ header .logo {
     font-family: 'MontSerrat', serif;
     border-radius: 60px;
     padding: 30px;
+    width: calc(100% - 50px);
+    /* Compensa a margem do triângulo */
+}
+
+/* Ajustes na div de mensagens */
+.mensagens-importantes-div {
+    display: flex;
+    width: 100%;
+    /* Ocupa toda a largura disponível */
 }
 
 .mensagens-importantes h5 {
@@ -208,18 +252,16 @@ header .logo {
 }
 
 .mensagens-importantes .lontra-cll {
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 15%;
     border-radius: 100%;
     position: relative;
 }
 
 .comunicado p {
-    width: 400px;
-    text-align: justify;
-    font-style: italic;
-    font-size: 15px;
-    margin: 0;
+    width: auto;
+    /* Remove largura fixa */
+    max-width: 100%;
 }
 
 .linha {
@@ -242,8 +284,24 @@ header .logo {
     gap: 15px;
 }
 
+.lontra-consegue .lontra-cll {
+    width: 100%;
+}
+
+.lontra-consegue-div {
+    width: auto;
+    /* Remove largura fixa */
+    max-width: 100%;
+}
+
 .conseguimos-p {
     font-weight: 600;
+}
+
+.conseguimos-p,
+.beneficio p,
+.comunicado p {
+    font-size: 1.5em;
 }
 
 .beneficios {
@@ -261,7 +319,6 @@ header .logo {
 }
 
 .beneficio p {
-    font-size: 15px;
     margin: 0;
     color: #5A10ED;
 }
@@ -270,28 +327,34 @@ header .logo {
     position: relative;
 }
 
+.div-btn {}
+
 .btn-quero {
+    display: block;
     text-decoration: none;
     background-color: #0D0C3B;
-    font-size: 29px;
+    font-size: 40px;
     font-weight: bold;
     color: #E8EFFF;
     padding: 15px 30px 15px 30px;
     border-radius: 200px;
-    margin-left: 46px;
+    margin-left: 35px;
+    width: 100%;
+    text-align: center;
 }
 
 .mouse {
     position: absolute;
-    width: 50px;
-    left: 30px;
-    top: 25px;
+    width: 70px;
+    left: 20px;
+    top: 30px;
 }
 
 .paisagem {
     position: relative;
     background-color: #5A10ED;
-    overflow: hidden; /* Adicionado para evitar colapso de margem */
+    overflow: hidden;
+    /* Adicionado para evitar colapso de margem */
 }
 
 
@@ -308,7 +371,7 @@ header .logo {
 
 .montanhas {
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: 750px;
 }
 
@@ -317,28 +380,43 @@ header .logo {
     align-items: center;
     position: relative;
     z-index: 999;
+    gap: 60px;
     left: calc(50% - 550px);
-    margin-top: 270px;
-    margin-bottom: 150px;
+    margin-top: 240px;
+    margin-bottom: 60px;
 
 }
 
 .balao-div {
     position: relative;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 0;
 }
 
-.balao-div-container {
+.balao-div::after {
+    content: '';
     position: absolute;
-    padding: 30px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #fff;
 }
 
 .text-balao {
+    width: 100%;
     font-family: 'Comfortaa', serif;
-    width: 700px;
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: justify;
+    margin: 0;
+    line-height: 1.5;
     color: #5A10ED;
-    font-weight: bold;
 }
 
 .balao {
@@ -360,7 +438,8 @@ header .logo {
 /*  SESSAO DO NAVEGADOR  */
 
 .page {
-    position: relative;
+    width: 100%;
+    background-color: #5A10ED;
 }
 
 .top {
@@ -370,6 +449,7 @@ header .logo {
     padding-right: 15px;
     background-color: #0D0C3B;
     align-items: center;
+    margin-bottom: -50px;
 }
 
 .tabs {
@@ -417,19 +497,18 @@ header .logo {
 }
 
 .down {
-    background-color: #5A10ED;
-    position: absolute;
     width: 100%;
-    top: 50px;
+    background-color: #5A10ED;
+    padding-top: 50px;
 }
 
 .header {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 10px;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
 }
 
 .setinhas {
@@ -440,8 +519,11 @@ header .logo {
     margin: 0;
 }
 
-.atualizar, .coracao, .barras { 
+.atualizar,
+.coracao,
+.barras {
     width: 25px;
+    height: auto;
 }
 
 .navegador {
@@ -451,28 +533,29 @@ header .logo {
     font-family: "MontSerrat";
     color: black;
     background-color: white;
-    width: 1200px;
-    padding: 5px;
-    padding-left: 10px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 5px 10px;
     border-radius: 40px;
+    font-size: 0.8em;
 }
 
 .navegador p {
     margin: 0;
+    white-space: nowrap;
 }
 
-.barras {
-    margin-right: 50px;
-}
+.barras {}
 
 .servicos {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se ajustem para uma nova linha */
-    width: 100%; /* Ajuste a largura para 100% */
-    margin-top: 150px;
-    margin-bottom: 350px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px auto;
     list-style: none;
-    justify-content: center; /* Garante que o espaçamento entre as colunas seja adequado */
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
 }
 
 .servicos li {
@@ -480,7 +563,7 @@ header .logo {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 30%; /* Para 3 itens por linha, defina a largura de cada item como 30% */
+    width: 30%;
     padding: 20px;
     padding-bottom: 0;
 }
@@ -492,13 +575,14 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     font-family: "MontSerrat";
     font-weight: 500;
     font-size: 40px;
     text-align: center;
-    padding: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 15px 60px;
+    position: relative;
+    z-index: 3;
 }
 
 .servicos li div h3 {
@@ -520,9 +604,8 @@ header .logo {
 
 /*  PARCEIROS  */
 
-.parceiros{
+.parceiros {
     position: relative;
-    margin-top:700px;
     background-color: #5A10ED;
 }
 
@@ -636,31 +719,51 @@ header .logo {
     background-color: white;
     padding-top: 100px;
     gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.consultoria .esquerda {
+.consultoria {
+    gap: 100px;
+}
+
+.consultoria-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 800px;
 }
 
-.consultoria .esquerda h5{
+.consultoria .esquerda {
+    width: 50%;
+}
+
+.consultoria .esquerda p {
+    font-size: 30px;
+}
+
+.titulo-consultoria {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#consultoria {
     font-family: "Comfortaa";
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     color: #5A10ED;
 }
 
-.consultoria .esquerda p {
+.consultoria-container p {
     margin: 0;
     font-family: MontSerrat;
     font-weight: 500;
     font-size: 25px;
-    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
-.consultoria .esquerda form {
+.consultoria-container form {
     margin-top: 50px;
 }
 
@@ -672,36 +775,30 @@ header .logo {
     background-color: #5A10ED;
     font-family: "MontSerrat";
     font-size: 16px;
-    padding: 30px 0px 30px 0px;
+    padding: 50px 40px;
     border-radius: 36px;
+    width: 600px;
+    margin: 0 auto;
 }
-
 
 .formulario .titulo {
     text-align: center;
     font-size: 53.01px;
-    width: 500px;
+    width: 100%;
     margin-bottom: 50px;
 }
 
-.formulario input, select {
-    width: 398px;
-    height: 43px;
+.formulario input,
+select {
+    width: 500px;
+    height: 50px;
     margin-bottom: 20px;
     padding-left: 50px;
     padding-right: 10px;
     color: #636363;
     background-color: #fff;
     border: none;
-}
-
-.formulario select {
-    appearance: none; /* Remove o estilo padrão da setinha */
-    -webkit-appearance: none; /* Compatibilidade com navegadores baseados em WebKit */
-    -moz-appearance: none; /* Compatibilidade com Firefox */
-    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"%3E%3Cpath fill="none" stroke="%23000" stroke-width="1.5" d="M1 1l4 4 4-4"/%3E%3C/svg%3E') no-repeat right 20px center; /* Ícone customizado da setinha */
-    background-color: #fff; /* Cor de fundo do select */
-    padding-right: 40px; /* Espaço interno maior para acomodar a setinha */
+    font-size: 18px;
 }
 
 .formulario button {
@@ -710,10 +807,10 @@ header .logo {
     font-family: "MontSerrat";
     color: #fff;
     font-size: 28px;
-    width: 398px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-} 
+    width: 500px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
 
 .consultoria .direita {
     margin-bottom: 50px;
@@ -721,5 +818,26 @@ header .logo {
 
 .lupa {
     width: 300px;
+    margin-top: 0;
 }
 
+.titulo-lupa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .lupa {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .lupa {
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

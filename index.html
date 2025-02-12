@@ -12,6 +12,8 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
     <title>Didas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +23,23 @@
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="Assets/imgs/icone.png" type="image/x-icon">
+    <script src="Assets/js/mian.js" defer></script>
 </head>
 
 <body>
-    <p class="home-id" id="home" </p>
-    <header class="d-flex align-itens-center justify-content-between">
-        <img class="logo" src="Assets/imgs/Logo.png" alt="Logo Didas">
+    <p class="home-id" id="home"> </p>
+    <header>
+        <!-- Adicione um botão de menu hambúrguer para mobile -->
+        <div class="header-container">
+            <img class="logo" src="Assets/imgs/Logo.png" alt="Logo Didas">
+            <button class="menu-toggle" id="menu-toggle">
+                <img src="Assets/imgs/seta-down.png" alt="Abrir menu" class="seta-down">
+            </button>
+        </div>
+
 
         <nav class="d-flex align-items-center">
-            <ul class="d-flex align-items-center lista-nav text-decoration-none m-0">
+            <ul class="d-flex align-items-center lista-nav text-decoration-none m-0" id="menu">
                 <li class="item-nav d-flex flex-row align-itens-center ">
                     <img src="Assets/imgs/home.svg" class="icone" alt="home">
                     <a class="d-flex align-items-center" href="#home">Início</a>
@@ -53,7 +63,7 @@
         </nav>
     </header>
 
-    <section class="sec-principal d-flex justify-content-between align-items-center">
+    <section class="sec-principal ">
         <div class="principal">
             <h1 class="headline">Cresça com soluções inteligentes de marketing digital e gestão eficiente.</h1>
             <p class="line">descubra como impulsionar suas vendas com nossas soluções.</p>
@@ -72,7 +82,7 @@
                     <div class="caixa-roxa">
                         <img class="notificacoes" src="Assets/imgs/notificacoes.png"
                             alt="icone da lontra com um celular">
-                        <img class="lontra-cll" src="Assets/imgs/lontra-cll.png" alt="lontra com celular na mão">
+                        <img class="lontra-cll" src="Assets/imgs/lontra-cll-div.png" alt="lontra com celular na mão">
                     </div>
                 </div>
                 <div class="footer-direita">
@@ -148,19 +158,15 @@
         </div>
         <div class="paisagem-conteudo">
             <div class="balao-div">
-                <div class="balao-div-container">
-                    <p class="text-balao">
-                        ok, sabemos que parece bom demais para ser verdade, mas garantimos nossos resultados e
-                        estamos prontos para provar isso! Nossa startup é formada por profissionais incríveis,
-                        especialistas em Design, Marketing, Tráfego Pago, Social Media, Branding... e sim, também
-                        azemos um café sensacional.
-                        <br>
-                        <br>
-                        Ainda não está convencido? Então deixa eu te contar mais...
-                    </p>
-                </div>
-
-                <img class="balao" src="Assets/imgs/balao.png" alt="balao de conversa">
+                <p class="text-balao">
+                    ok, sabemos que parece bom demais para ser verdade, mas garantimos nossos resultados e
+                    estamos prontos para provar isso! Nossa startup é formada por profissionais incríveis,
+                    especialistas em Design, Marketing, Tráfego Pago, Social Media, Branding... e sim, também
+                    azemos um café sensacional.
+                    <br>
+                    <br>
+                    Ainda não está convencido? Então deixa eu te contar mais...
+                </p>
             </div>
             <!-- <img class="cafe" src="Assets/imgs/cafe.png" alt="chicare de café"> -->
             <img class="icone" src="Assets/imgs/icone.png" alt="">
@@ -272,7 +278,9 @@
             <img class="lupa" src="Assets/imgs/lupa.png" alt="um icone de pesquisa">
         </div>
         <div class="direita">
-            <form id="formulario" action="https://script.google.com/macros/s/AKfycbyEXOhLmkqak1jkWE7Hx8Hjw1N7FbhwsXaiHAZPauEy7D23TJENPo2zPuGs4QFtrDao5g/exec" method="POST" class="formulario">
+            <form id="formulario"
+                action="https://script.google.com/macros/s/AKfycbyEXOhLmkqak1jkWE7Hx8Hjw1N7FbhwsXaiHAZPauEy7D23TJENPo2zPuGs4QFtrDao5g/exec"
+                method="POST" class="formulario">
                 <h4 class="titulo">Consultoria Gratuita</h4>
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
@@ -292,28 +300,28 @@
                 <p id="mensagem" style="display: none; margin-top: 10px;"></p>
             </form>
             <script>
-                document.getElementById('formulario').addEventListener('submit', async function(event) {
+                document.getElementById('formulario').addEventListener('submit', async function (event) {
                     event.preventDefault(); // Impede o envio padrão do formulário
-                    
+
                     const formData = new FormData(this);
                     const mensagem = document.getElementById('mensagem');
-            
+
                     try {
                         // Envia os dados para o servidor
                         const response = await fetch(this.action, {
                             method: 'POST',
                             body: formData
                         });
-            
+
                         if (response.ok) {
                             // Limpa os campos do formulário
                             this.reset();
-            
+
                             // Exibe mensagem de sucesso
                             mensagem.textContent = 'Dados enviados com sucesso!';
                             mensagem.style.color = '#2cff2c';
                             mensagem.style.display = 'block';
-            
+
                             // Remove a mensagem após alguns segundos
                             setTimeout(() => mensagem.style.display = 'none', 5000);
                         } else {
@@ -331,8 +339,7 @@
                     }
                 });
             </script>
-            
-            
+        </div>
     </section>
 </body>
 

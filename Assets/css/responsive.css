@@ -1,0 +1,765 @@
+@media (max-width: 720px) {
+    .lista-nav {
+        display: none !important;
+    }
+
+    .ativa {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        margin: 20px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .seta-down {
+        display: inline;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .lista-nav {
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: white;
+        border: 3px solid #5A10ED;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .hamburguer {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .sec-principal {
+        margin-left: 20px;
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .lontra {
+        width: 385px;
+        margin-top: 50px;
+    }
+
+    .headline {
+        font-size: 33px;
+        width: 100%;
+    }
+
+    .line {
+        margin-top: 25px;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .seta {
+        width: 40px;
+        margin-top: 90px;
+    }
+
+    .footer-sec-contain {
+        flex-direction: column-reverse;
+        margin: 20px;
+        gap: 40px;
+        width: calc(100% - 40px);
+    }
+
+    .div-lontra-cll,
+    .footer-direita {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    .caixa-roxa {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        min-height: 450px;
+        border-radius: 40px;
+        overflow: visible;
+        position: relative;
+    }
+
+    .lontra-cll {
+        width: 90%;
+        max-width: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .notificacoes {
+        position: absolute;
+        right: -10px;
+        top: 15%;
+        width: 100px;
+        z-index: 2;
+    }
+
+    .mensagens-importantes {
+        width: 100%;
+        max-width: none;
+        padding: 25px;
+        border-radius: 30px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .mensagens-importantes-div {
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .triangulo {
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-50%) rotate(-90deg);
+        z-index: 1;
+    }
+
+    .comunicado {
+        width: 100%;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .comunicado p {
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .comunicado .lontra-cll {
+        width: 50px;
+        position: static;
+        transform: none;
+    }
+
+    .linha {
+        width: 100%;
+    }
+
+    .lontra-consegue-div {
+        width: 100%;
+        max-width: none;
+        margin: 20px 0;
+    }
+
+    .beneficio p {
+        font-size: 1.2em;
+        margin: 0;
+        color: #5A10ED;
+    }
+
+    .div-btn-quero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .btn-quero {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-align: center;
+        width: auto;
+        max-width: 80%;
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .mouse {
+        width: 30px;
+    }
+
+    .navegador {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .barras {
+        margin-right: 20px;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 50px auto;
+    }
+
+    .servicos li {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .servicos li div {
+        font-size: 24px;
+        padding: 15px 30px;
+    }
+
+    .servicos li p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .setinhas {
+        font-size: 20px;
+    }
+
+    .atualizar,
+    .coracao,
+    .barras {
+        width: 20px;
+    }
+
+    .parceiros-div {
+        flex-direction: column;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    .parceiros-div .esquerda {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .parceiro img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .frase {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .descubra {
+        width: 100%;
+        max-width: 400px;
+        font-size: 22px;
+    }
+
+    .btn-invasão {
+        margin-top: -50px;
+    }
+
+    .consultoria {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .consultoria .esquerda {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .consultoria .esquerda h5 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .consultoria .esquerda p {
+        font-size: 18px;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .lupa {
+        width: 200px;
+        margin: 20px 0;
+    }
+
+    .consultoria-container {
+        padding: 20px;
+    }
+
+    .titulo-consultoria {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-consultoria h5 {
+        font-family: "Comfortaa";
+        font-size: 40px;
+        font-weight: bold;
+        color: #5A10ED;
+        margin: 0;
+    }
+
+    .titulo-lupa {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .consultoria-container p {
+        font-family: "MontSerrat";
+        font-size: 16px;
+        color: #000;
+        margin: 20px 0 30px 0;
+        max-width: 500px;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .formulario .titulo {
+        font-size: 35px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .formulario input,
+    .formulario select {
+        width: 100%;
+        max-width: 350px;
+        height: 40px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .formulario select {
+        padding-right: 40px;
+    }
+
+    .formulario button {
+        width: 100%;
+        max-width: 350px;
+        font-size: 22px;
+    }
+
+    .consultoria-desktop {
+        display: none;
+    }
+
+    .consultoria-mobile {
+        display: block;
+        padding: 20px;
+    }
+
+    .titulo-consultoria {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-consultoria h5 {
+        font-family: "Comfortaa";
+        font-size: 40px;
+        font-weight: bold;
+        color: #5A10ED;
+        margin: 0;
+    }
+
+    .titulo-lupa {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .lupa {
+        width: 50px;
+        height: auto;
+    }
+
+    .consultoria-mobile p {
+        font-family: "MontSerrat";
+        font-size: 16px;
+        margin: 20px 0 30px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .consultoria-mobile {
+        display: none;
+    }
+
+    /* Manter os estilos originais para desktop */
+    .consultoria {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa-roxa {
+        min-height: 350px;
+    }
+
+    .lontra-cll {
+        width: 95%;
+    }
+
+    .notificacoes {
+        width: 80px;
+    }
+
+    .triangulo {
+        width: 80px;
+        bottom: -50px;
+    }
+
+    .btn-quero {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    .mouse {
+        width: 50px;
+    }
+
+    .navegador {
+        padding: 3px 8px;
+        font-size: 10px;
+    }
+
+    .barras {
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    .servicos {
+        margin: 50px 10px;
+    }
+
+    .servicos li div {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    .servicos li p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .header {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .setinhas {
+        font-size: 16px;
+    }
+
+    .atualizar,
+    .coracao,
+    .barras {
+        width: 15px;
+    }
+
+    .top {
+        margin-bottom: -40px;
+    }
+
+    .tab {
+        gap: 20px;
+        padding: 15px;
+        padding-top: 8px;
+        font-size: 10px;
+    }
+
+    .tab .esquerda {
+        gap: 5px;
+    }
+
+    .tab .esquerda img {
+        width: 15px;
+    }
+
+    .tab .esquerda p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .icons-acoes {
+        width: 80px;
+        gap: 8px;
+        margin-top: -40px;
+    }
+
+    .icons-acoes img {
+        width: 15px;
+    }
+
+    .parceiros-div {
+        margin: 0;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .parceiro {
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .parceiro img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .frase {
+        max-width: 300px;
+    }
+
+    .descubra {
+        font-size: 18px;
+        max-width: 300px;
+    }
+
+    .consultoria {
+        padding: 30px 15px;
+    }
+
+    .formulario {
+        padding: 30px 10px 30px 10px !important;
+    }
+
+    .formulario .titulo {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .formulario input,
+    .formulario select {
+        max-width: 280px;
+        height: 35px;
+        padding: 0 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .formulario select {
+        padding-right: 35px;
+    }
+
+    .formulario button {
+        max-width: 280px;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .parceiros-div .linha {
+        width: 80%;
+        height: 3px;
+        margin: 30px auto;
+    }
+
+    .consultoria .esquerda h5 {
+        font-size: 28px;
+    }
+
+    .consultoria .esquerda p {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .lupa {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .paisagem {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .montanhas {
+        position: absolute;
+        width: 800%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        object-fit: cover;
+        min-height: 100%;
+    }
+
+    .cordilheira {
+        padding-top: 200px;
+        position: relative;
+    }
+
+    .placa {
+        position: absolute;
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 20%;
+        z-index: 2;
+    }
+
+    .paisagem-conteudo {
+        position: sticky;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        margin-top: 250px;
+        width: 90%;
+    }
+
+    .balao {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .text-balao {
+        width: 100%;
+        max-width: 500px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .cafe {
+        display: none;
+    }
+
+    .balao-div {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .balao-div::after {
+        right: auto;
+        top: auto;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid #fff;
+        border-bottom: 0;
+    }
+
+    .text-balao {
+        font-size: 1.2em;
+    }
+
+    .balao-div-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .page {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navegador {
+        width: 90%;
+    }
+
+    .servicos {
+        margin: 100px auto;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .servicos li {
+        width: 100%;
+    }
+
+    .servicos li div {
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+
+    .servicos li p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .btn-invasao {
+        width: 50px;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .placa {
+        width: 200px;
+        bottom: -70%;
+    }
+
+    .balao {
+        max-width: 400px;
+    }
+
+    .text-balao {
+        font-size: 1.2m;
+    }
+
+    .balao-div {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .balao-div::after {
+        bottom: -20px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #fff;
+    }
+
+    .balao-div-container {
+        padding: 10px;
+    }
+
+    .parceiros .esquerda img {
+        width: 150%;
+        max-width: 400px;
+        padding: 20px;
+    }
+}
