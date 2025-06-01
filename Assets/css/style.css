@@ -104,6 +104,7 @@ header .logo {
 .btn-contate,
 .btn-quero {
     font-family: 'Comfortaa', serif;
+    text-transform: lowercase;
 }
 
 .headline {
@@ -412,6 +413,7 @@ header .logo {
 .text-balao {
     width: 100%;
     font-family: 'Comfortaa', serif;
+    text-transform: lowercase;
     font-size: 1.5em;
     text-align: left;
     margin: 0;
@@ -513,6 +515,7 @@ header .logo {
 
 .setinhas {
     font-family: "Comfortaa";
+    text-transform: lowercase;
     font-size: 25px;
     font-weight: bold;
     color: white;
@@ -591,6 +594,7 @@ header .logo {
 
 .servicos li p {
     font-family: "Comfortaa";
+    text-transform: lowercase;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -626,6 +630,7 @@ header .logo {
 
 .titulo {
     font-family: "Comfortaa";
+    text-transform: lowercase;
     font-weight: 400;
     font-size: 80px;
     color: white;
@@ -659,6 +664,7 @@ header .logo {
     margin: 0;
     text-align: center;
     font-family: "Comfortaa";
+    text-transform: lowercase;
 }
 
 .parceiros-div .linha {
@@ -677,6 +683,7 @@ header .logo {
 
 .texto p {
     font-family: "Comfortaa";
+    text-transform: lowercase;
     margin: 0;
     font-weight: bold;
     height: 120px;
@@ -750,6 +757,7 @@ header .logo {
 
 #consultoria {
     font-family: "Comfortaa";
+    text-transform: lowercase;
     font-size: 60px;
     font-weight: bold;
     color: #5A10ED;

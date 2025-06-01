@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.style.opacity = '0';
 
         // Força um reflow para a animação funcionar
-        menu.offsetHeight; 
+        menu.offsetHeight;
 
         menu.style.opacity = '1';
         menu.classList.add('ativa');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.style.transition = 'opacity 0.3s ease-in-out';
         menu.style.opacity = '0';
         setaDown.style.transform = 'rotate(0deg)';
-        
+
         // Espera a animação terminar antes de esconder o menu
         setTimeout(() => {
             menu.style.display = 'none';
